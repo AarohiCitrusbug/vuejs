@@ -6,7 +6,7 @@
     </div>
     <div>
       <label for="name">Name</label>
-      <input type="text" id="name" v-model="formValues.name" />
+      <input type="text" id="name" v-model.trim="formValues.name" />
     </div>
     <div>
       <label for="name">Profile Summary</label>
@@ -34,6 +34,10 @@
       />
       <label for="remoteWork">Open to remote work?</label>
     </div>
+    <div>
+      <label for="name">Age</label>
+      <input type="number" id="age" v-model.trim="formValues.age" />
+    </div>
   </form>
 </template>
 <script>
@@ -46,6 +50,7 @@ export default {
         profileSummary: "",
         country: "",
         remoteWork: "no",
+        age: null,
       },
     };
   },
