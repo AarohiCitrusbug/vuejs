@@ -33,16 +33,20 @@
   <MethodEvent />
 
   <FromHandling />
+  <h3>Computed properties, Setters, Watchers</h3>
+  <ComputedpropertiesSettersWatchers />
 </template>
 
 <script>
 import MethodEvent from "./MethodEvent.vue";
 import FromHandling from "./FromHandling.vue";
+import ComputedpropertiesSettersWatchers from "./ComputedpropertiesSettersWatchers.vue";
 export default {
   name: "App",
   components: {
     MethodEvent,
     FromHandling,
+    ComputedpropertiesSettersWatchers,
   },
   data() {
     return {
