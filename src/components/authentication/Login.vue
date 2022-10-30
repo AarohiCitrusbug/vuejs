@@ -6,7 +6,7 @@
                 <span class="error-message">{{emailErrorMsg}}</span>
             </div>
             <div class="form-group from-field">
-                <input type="password" class="form-control item" id="password" placeholder="Password" v-model="password">
+                <input type="password" class="form-control item" id="password" placeholder="Password" v-model="password" @input="checkPassword($event)">
                 <span class="error-message">{{passwordErrorMsg}}</span>
             </div>
             <div class="form-group text-center d-block">
@@ -21,6 +21,7 @@
     </div>
 </template>
 <script>
+import axios from 'axios';
 export default {
     name:"Login",
     data() {
@@ -34,7 +35,7 @@ export default {
     methods:{
     checkForm: function (e) {
       if (this.email && this.password) {
-        return true;
+        this.onSubmit();
       }
 
       this.emailErrorMsg = '';
@@ -62,7 +63,28 @@ export default {
       }else{
         this.emailErrorMsg = '';
       }
+    },
+    checkPassword(event){
+      this.password=event.target.value;
+      if(this.password == ''){
+        this.passwordErrorMsg = 'Please provide a password';
+      }else{
+        this.passwordErrorMsg = '';
+      }
+    },
+    async onSubmit(){
+      let result = await axios.get(`http://localhost:3000/user?email=${this.email}&password=${this.password}`)
+      if(result.status == 200 && result.data.length > 0){
+        localStorage.setItem('user',JSON.stringify(result.data[0]));
+        this.$router.push({name:'Dashboard'})
+      }
     } 
+  },
+  mounted(){
+    let user = localStorage.getItem('user');
+    if(user){
+      this.$router.push({name:'Dashboard'});
+    }
   }
 }
 </script>

@@ -1,0 +1,22 @@
+{
+  "user": [
+    {
+      "first_name": "Aarohi",
+      "last_name": "Shah",
+      "email": "aarohishah440@gmail.com",
+      "contact_no": "9426837034",
+      "dob": "2022-10-20",
+      "password": "test@12asd",
+      "id": 1
+    },
+    {
+      "first_name": "Shruti",
+      "last_name": "Govani",
+      "email": "shruti@mailinator.com",
+      "contact_no": "9426837034",
+      "dob": "2022-10-05",
+      "password": "test@12asd",
+      "id": 2
+    }
+  ]
+}
