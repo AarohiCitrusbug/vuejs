@@ -76,6 +76,7 @@ export default {
       let result = await axios.get(`http://localhost:3000/user?email=${this.email}&password=${this.password}`)
       if(result.status == 200 && result.data.length > 0){
         localStorage.setItem('user',JSON.stringify(result.data[0]));
+        localStorage.setItem('firstName',JSON.stringify(result.data[0]['first_name']));
         this.$router.push({name:'Dashboard'})
       }
     } 

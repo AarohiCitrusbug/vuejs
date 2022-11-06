@@ -17,6 +17,14 @@
       "dob": "2022-10-05",
       "password": "test@12asd",
       "id": 2
+    },
+    {
+      "first_name": "Test",
+      "last_name": "Test",
+      "email": "test@mailinator.com",
+      "contact_no": "9426837034",
+      "password": "test@12asd",
+      "id": 3
     }
   ]
 }

@@ -2,7 +2,6 @@ import { createWebHashHistory,createRouter } from "vue-router";
 import Login from './components/authentication/Login.vue';
 import Registration from './components/authentication/Registration.vue';
 import Dashboard from './components/Dashboard.vue';
-
 const routes=[
     {
         name:'Login',
