@@ -2,6 +2,7 @@ import { createWebHashHistory,createRouter } from "vue-router";
 import Login from './components/authentication/Login.vue';
 import Registration from './components/authentication/Registration.vue';
 import Dashboard from './components/Dashboard.vue';
+import Binding from './components/Binding.vue'
 const routes=[
     {
         name:'Login',
@@ -17,6 +18,11 @@ const routes=[
         name:'Dashboard',
         path:'/',
         component:Dashboard
+    },
+    {
+        name:'Binding',
+        path:'/binding',
+        component:Binding
     }
 ]
 

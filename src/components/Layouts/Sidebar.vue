@@ -3,13 +3,13 @@
 		<nav id="sidebar">
             <ul class="list-unstyled components mb-5">
             <li class="active">
-                <a href="#">Dashboard</a>
+                <router-link to="/">Dashboard</router-link>
             </li>
             <li>
-                <a href="#">Binding - Text, HTML, Attributes, Classes, Styles</a>
+                <router-link to="/binding">Binding</router-link>
             </li>
             <li>
-                <a href="#">Conditional rendering, List rendering, Lists & key</a>
+                <a href="#">Rendering</a>
             </li>
             <li>
                 <a href="#">Methods, Event handling, Form handling, Modifiers</a>
