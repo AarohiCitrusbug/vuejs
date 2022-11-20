@@ -155,3 +155,24 @@ body {
     padding: 50px 20px;
   }
 }
+
+#title{
+  text-decoration: underline;
+}
+.title{
+  font-style: italic;
+  font-weight: 700;
+}
+.highlight{
+  color: #42b883;
+}
+.text{
+  color: #174832;
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+}

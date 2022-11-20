@@ -25,6 +25,54 @@
       "contact_no": "9426837034",
       "password": "test@12asd",
       "id": 3
+    },
+    {
+      "first_name": "Test",
+      "last_name": "Test",
+      "email": "new@mailinator.com",
+      "contact_no": "9426837034",
+      "password": "test@12asd",
+      "id": 4
+    },
+    {
+      "first_name": "Shruti",
+      "last_name": "Govani",
+      "email": "shrutitest@mailinator.com",
+      "contact_no": "9426837034",
+      "password": "test@12asd",
+      "id": 5
+    },
+    {
+      "first_name": "Aarohi",
+      "last_name": "shah",
+      "email": "aarohishah440@gmail.com",
+      "contact_no": "9426837034",
+      "password": "test@12asd",
+      "id": 6
+    },
+    {
+      "first_name": "Shruti",
+      "last_name": "Shah",
+      "email": "superadmin@gmail.com",
+      "contact_no": "9426837034",
+      "password": "test@12asd",
+      "id": 7
+    },
+    {
+      "first_name": "Aarohi",
+      "last_name": "Shah",
+      "email": "aarohishah440@gmail.com",
+      "contact_no": "9426837034",
+      "password": "test@12asd",
+      "id": 8
+    },
+    {
+      "first_name": "Aarohi",
+      "last_name": "Shah",
+      "email": "aarohishah440@gmail.com",
+      "contact_no": "9426837034",
+      "password": "test@12asd",
+      "id": 9
     }
   ]
 }

@@ -1,5 +1,7 @@
 <template>
-   <div>Tab A</div>
+   <div>
+        <b>Tab A Content</b>
+   </div>
 </template>
 <script>
 export default {

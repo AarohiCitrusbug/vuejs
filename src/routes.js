@@ -2,7 +2,15 @@ import { createWebHashHistory,createRouter } from "vue-router";
 import Login from './components/authentication/Login.vue';
 import Registration from './components/authentication/Registration.vue';
 import Dashboard from './components/Dashboard.vue';
-import Binding from './components/Binding.vue'
+import Binding from './components/Binding.vue';
+import Rendring from './components/Rendring.vue';
+import Modifiers from './components/Modifiers.vue';
+import ComputedProperties from './components/ComputedProperties.vue';
+import Watchers from './components/Watchers.vue';
+import Slots  from './components/Slots.vue';
+import DynamicComponents from './components/DynamicComponents.vue';
+import mixins from './components/mixins.vue';
+import CompositionAPI from './components/CompositionAPI.vue';
 const routes=[
     {
         name:'Login',
@@ -23,6 +31,47 @@ const routes=[
         name:'Binding',
         path:'/binding',
         component:Binding
+    },
+    {
+        name:'Rendring',
+        path:'/rendring',
+        component:Rendring
+    }
+    ,
+    {
+        name:'Modifiers',
+        path:'/modifiers',
+        component:Modifiers
+    },
+    {
+        name:'ComputedProperties',
+        path:'/computed',
+        component:ComputedProperties
+    },
+    {
+        name:'Watchers',
+        path:'/watchers',
+        component:Watchers
+    },
+    {
+        name:'Slots',
+        path:'/slots',
+        component:Slots
+    },
+    {
+        name:'DynamicComponents',
+        path:'/dynamic/components',
+        component:DynamicComponents
+    },
+    {
+        name:'mixins',
+        path:'/reuse/mixins',
+        component:mixins
+    },
+    {
+        name:'CompositionAPI',
+        path:'/composition/api',
+        component:CompositionAPI
     }
 ]
 
