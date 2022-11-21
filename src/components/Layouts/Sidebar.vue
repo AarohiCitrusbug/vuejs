@@ -32,6 +32,9 @@
                 <li>
                     <router-link to="/composition/api">Composition API</router-link>
                 </li>
+                <li>
+                    <router-link to="/users">Users</router-link>
+                </li>
             </ul>
     	</nav>
 		</div>

@@ -11,6 +11,7 @@ import Slots  from './components/Slots.vue';
 import DynamicComponents from './components/DynamicComponents.vue';
 import mixins from './components/mixins.vue';
 import CompositionAPI from './components/CompositionAPI.vue';
+import ListOfUsers from './components/ListOfUsers.vue';
 const routes=[
     {
         name:'Login',
@@ -67,6 +68,11 @@ const routes=[
         name:'mixins',
         path:'/reuse/mixins',
         component:mixins
+    },
+    {
+        name:'ListOfUsers',
+        path:'/users',
+        component:ListOfUsers
     },
     {
         name:'CompositionAPI',
